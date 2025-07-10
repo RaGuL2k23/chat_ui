@@ -48,7 +48,7 @@ console.log(isPrime(11)); // true
   
 
   return (
-    <main className="h-screen w-screen flex flex-col bg-gray-900 text-white">
+    <main className="h-screen w-screen max-w-[3800px]  flex flex-col bg-gray-900 text-white">
       {/* Header */}
       <header className="p-4 text-lg font-semibold bg-gray-800 shadow-md">
         Welcome to ChatBot
