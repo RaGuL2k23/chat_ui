@@ -3,9 +3,10 @@ import { Download } from "lucide-react";
 // Utility to guess file extension based on message content
 const guessFileExtension = (message) => {
   const msg = message.toLowerCase();
-
+  console.log(msg.includes('def') , msg);
+  
   if (msg.includes("<html") || msg.includes("<!doctype html")) return "html";
-  if (msg.includes("import") && msg.includes("def")) return "py";
+  if  (msg.includes("def")) return "py";
   if (msg.includes("console.log") || msg.includes("function")) return "js";
   if (msg.includes("select") || msg.includes("from") || msg.includes("join")) return "sql";
   if (msg.includes("body {") || msg.includes("color:") || msg.includes("font-size:")) return "css";
